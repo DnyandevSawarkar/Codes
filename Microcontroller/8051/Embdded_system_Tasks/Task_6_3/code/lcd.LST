@@ -1,0 +1,64 @@
+C51 COMPILER V9.01   LCD                                                                   12/09/2021 13:59:58 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE LCD
+OBJECT MODULE PLACED IN lcd.OBJ
+COMPILER INVOKED BY: C:\keli\C51\BIN\C51.EXE lcd.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg52.h> //including sfr registers for ports of the controller
+   2          #include<lcd.h> // Header file
+   3          
+   4          //LCD Module Connections
+   5          sbit RS = P3^7;
+   6          sbit EN = P3^5;
+   7          
+   8          sbit D0 = P2^0;
+   9          sbit D1 = P2^1;
+  10          sbit D2 = P2^2;
+  11          sbit D3 = P2^3;
+  12          sbit D4 = P2^4;
+  13          sbit D5 = P2^5;
+  14          sbit D6 = P2^6;
+  15          sbit D7 = P2^7;
+  16          
+  17          
+  18          void Delay(int a)
+  19          {
+  20   1        int j;
+  21   1        int i;
+  22   1        for(i=0;i<a;i++)
+  23   1        {
+  24   2          for(j=0;j<100;j++);
+  25   2        }
+  26   1      }
+  27          
+  28          void main()
+  29          {
+  30   1        int i;
+  31   1        Lcd8_Init();
+  32   1        while(1)
+  33   1        {
+  34   2          Lcd8_Set_Cursor(1,1);
+  35   2          Lcd8_Write_String("ETC");
+  36   2          
+  37   2       }
+  38   1      }
+*** WARNING C280 IN LINE 30 OF LCD.C: 'i': unreferenced local variable
+*** WARNING C290 IN LINE 84 OF LCD.C: missing return value
+*** WARNING C290 IN LINE 176 OF LCD.C: missing return value
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    629    ----
+   CONSTANT SIZE    =      4    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      17
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  3 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,51 @@
+Module 1: Introduction to Machine Learning
+
+1. Module Introduction and Learning Objectives
+2. Welcome 
+3. Introduction to Machine Learning 	
+4. Python for Machine Learning 
+5. Supervised vs Unsupervised 
+
+Module 2: Regression
+
+1. Module Introduction and Learning Objectives 
+2. Introduction to Regression 
+3. Simple Linear Regression 
+4. Model Evaluation in Regression Models 
+5. Evaluation Metrics in Regression Models 
+6. Lab: Simple Linear Regression  
+7. Multiple Linear Regression   
+8. Lab: Multiple Linear Regression  
+9. Non-Linear Regression  
+10. Lab: Polynomial Regression  
+11. Lab: Non-linear Regression  
+
+Module 3: Classification
+
+1. Module Introduction and Learning Objectives  
+2. Introduction to Classification  
+3. K-Nearest Neighbors  
+4. Evaluation Metrics in Classification   
+5. Lab: KNN  
+6. Introduction to Decision Trees  
+7. Building Decision Trees  
+8. Lab: Decision Trees  
+9. Intro to Logistic Regression
+10. Logistic Regression vs Linear Regression
+11. Logistic Regression Training
+12. Lab: Logistic Regression
+13. Support Vector Machine
+14. Lab: SVM (Support Vector Machines)
+
+Module 4: Clustering
+
+1. Module Introduction and Learning Objectives
+2. Intro to Clustering
+3. Intro to k-Means
+4. More on k-Means
+5. Lab: k-Means
+6. Intro to Hierarchical Clustering
+7. More on Hierarchical Clustering
+8. Lab: Agglomerative Clustering
+9. DBSCAN
+10. DBSCAN Clustering

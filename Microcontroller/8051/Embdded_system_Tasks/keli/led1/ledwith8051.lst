@@ -1,0 +1,45 @@
+C51 COMPILER V9.01   LEDWITH8051                                                           10/19/2021 14:33:11 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE LEDWITH8051
+OBJECT MODULE PLACED IN .\ledwith8051.obj
+COMPILER INVOKED BY: C:\keli\C51\BIN\C51.EXE C:\Users\Yash's System\Downloads\Compressed\LED-Blinking-with-8051-Microcon
+                    -troller-and-Keil-C-AT89C51\LED Blinking with 8051 Microcontroller and Keil C - AT89C51\ledwith8051.c BROWSE DEBUG OBJECT
+                    -EXTEND PRINT(.\ledwith8051.lst) OBJECT(.\ledwith8051.obj)
+
+line level    source
+
+   1          #include<reg52.h>  // special function register declarations  
+   2                             // for the intended 8051 derivative       
+   3          
+   4          sbit LED = P2^0; //Defining LED pin
+   5          sbit LED = P2^1;
+*** ERROR C231 IN LINE 5 OF C:\USERS\YASH'S SYSTEM\DOWNLOADS\COMPRESSED\LED-BLINKING-WITH-8051-MICROCONTROLLER-AND-KEIL-
+             -C-AT89C51\LED BLINKING WITH 8051 MICROCONTROLLER AND KEIL C - AT89C51\LEDWITH8051.C: 'LED': redefinition
+   6          
+   7          void Delay(void);     // Function prototype declaration
+   8          
+   9          void main (void) 
+  10          {
+  11   1          while(1)                //infinite loop 
+  12   1          {
+  13   2             LED = 0; // LED ON
+  14   2             Delay();
+  15   2             LED = 1; // LED OFF
+  16   2             Delay();
+  17   2          }
+  18   1      }
+  19          
+  20          void Delay(void)
+  21          {
+  22   1          int j;
+  23   1          int i;
+  24   1          for(i=0;i<10;i++)
+  25   1          {
+  26   2              for(j=0;j<10000;j++)
+  27   2              {
+  28   3              }
+  29   2          }
+  30   1      }
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)

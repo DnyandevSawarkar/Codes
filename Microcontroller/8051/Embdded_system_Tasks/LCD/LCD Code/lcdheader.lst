@@ -1,0 +1,63 @@
+C51 COMPILER V9.01   LCDHEADER                                                             05/27/2018 21:49:52 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE LCDHEADER
+OBJECT MODULE PLACED IN .\lcdheader.obj
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE ..\..\eyantra\lcd1\lcdheaderprog\lcdheader.c BROWSE DEBUG OBJECTEXTEND PRIN
+                    -T(.\lcdheader.lst) OBJECT(.\lcdheader.obj)
+
+line level    source
+
+   1          #include<reg52.h> //including sfr registers for ports of the controller
+   2          #include<lcd.h> // Can be download from bottom of this article
+*** WARNING C318 IN LINE 2 OF ..\..\eyantra\lcd1\lcdheaderprog\lcdheader.c: can't open file 'lcd.h'
+   3          
+   4          //LCD Module Connections
+   5          sbit RS = P3^7;
+   6          sbit EN = P3^5;
+   7          sbit D0 = P2^0;
+   8          sbit D1 = P2^1;
+   9          sbit D2 = P2^2;
+  10          sbit D3 = P2^3;
+  11          sbit D4 = P2^4;
+  12          sbit D5 = P2^5;
+  13          sbit D6 = P2^6;
+  14          sbit D7 = P2^7;
+  15          
+  16          // #define ldata P2
+  17          
+  18          //End LCD Module Connections
+  19          
+  20          void Delay(int a)
+  21          {
+  22   1        int j;
+  23   1        int i;
+  24   1        for(i=0;i<a;i++)
+  25   1        {
+  26   2          for(j=0;j<100;j++)
+  27   2          {
+  28   3          }
+  29   2        }
+  30   1      }
+  31          
+  32          void main()
+  33          {
+  34   1        int i;
+  35   1        Lcd8_Init();
+*** WARNING C206 IN LINE 35 OF ..\..\EYANTRA\LCD1\LCDHEADERPROG\LCDHEADER.C: 'Lcd8_Init': missing function-prototype
+  36   1        while(1)
+  37   1        {
+  38   2          Lcd8_Set_Cursor(1,1);
+*** WARNING C206 IN LINE 38 OF ..\..\EYANTRA\LCD1\LCDHEADERPROG\LCDHEADER.C: 'Lcd8_Set_Cursor': missing function-prototy
+             -pe
+*** ERROR C267 IN LINE 38 OF ..\..\EYANTRA\LCD1\LCDHEADERPROG\LCDHEADER.C: 'Lcd8_Set_Cursor': requires ANSI-style protot
+             -ype
+  39   2          Lcd8_Write_String(" e-yantra Lab");
+  40   2          
+  41   2              Lcd8_Set_Cursor(2,1);
+  42   2          Lcd8_Write_String("SVPCET, Nagpur");
+  43   2          
+  44   2        }
+  45   1      }
+
+C51 COMPILATION COMPLETE.  3 WARNING(S),  1 ERROR(S)

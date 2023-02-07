@@ -1,0 +1,279 @@
+18:35:18.261 -> Sending packet: 
+18:35:18.261 -> Audio value : 172	sharp value : 0
+18:35:18.362 -> Sending packet: 
+18:35:18.362 -> Audio value : 166	sharp value : 0
+18:35:18.514 -> Sending packet: 
+18:35:18.514 -> Audio value : 175	sharp value : 0
+18:35:18.628 -> Sending packet: 
+18:35:18.628 -> Audio value : 160	sharp value : 0
+18:35:18.749 -> Sending packet: 
+18:35:18.749 -> Audio value : 173	sharp value : 0
+18:35:18.864 -> Sending packet: 
+18:35:18.864 -> Audio value : 170	sharp value : 0
+18:35:19.014 -> Sending packet: 
+18:35:19.014 -> Audio value : 174	sharp value : 0
+18:35:19.156 -> Sending packet: 
+18:35:19.156 -> Audio value : 162	sharp value : 0
+18:35:19.277 -> Sending packet: 
+18:35:19.277 -> Audio value : 141	sharp value : 0
+18:35:19.381 -> Sending packet: 
+18:35:19.381 -> Audio value : 192	sharp value : 48
+18:35:19.529 -> Sending packet: 
+18:35:19.529 -> Audio value : 135	sharp value : 0
+18:35:19.645 -> Sending packet: 
+18:35:19.645 -> Audio value : 172	sharp value : 0
+18:35:19.759 -> Sending packet: 
+18:35:19.759 -> Audio value : 150	sharp value : 0
+18:35:19.902 -> Sending packet: 
+18:35:19.902 -> Audio value : 165	sharp value : 0
+18:35:20.014 -> Sending packet: 
+18:35:20.014 -> Audio value : 197	sharp value : 0
+18:35:20.156 -> Sending packet: 
+18:35:20.156 -> Audio value : 144	sharp value : 0
+
+// Trian IN
+
+18:35:20.264 -> Audio value : 163	sharp value : 1916
+18:35:20.413 -> Sending packet: 
+18:35:20.413 -> Audio value : 168	sharp value : 1827
+18:35:20.523 -> Sending packet: 
+18:35:20.523 -> Audio value : 176	sharp value : 1733
+18:35:20.664 -> Sending packet: 
+18:35:20.664 -> Audio value : 176	sharp value : 2091
+18:35:20.797 -> Sending packet: 
+18:35:20.797 -> Audio value : 176	sharp value : 1914
+18:35:20.914 -> Sending packet: 
+18:35:20.914 -> Audio value : 217	sharp value : 1965
+18:35:21.057 -> Sending packet: 
+18:35:21.057 -> Audio value : 129	sharp value : 1805
+18:35:21.179 -> Sending packet: 
+18:35:21.179 -> Audio value : 121	sharp value : 2224
+18:35:21.298 -> Sending packet: 
+18:35:21.298 -> Audio value : 140	sharp value : 2109
+18:35:21.409 -> Sending packet: 
+18:35:21.409 -> Audio value : 151	sharp value : 2039
+18:35:21.564 -> Sending packet: 
+18:35:21.564 -> Audio value : 99	sharp value : 2039
+18:35:21.676 -> Sending packet: 
+18:35:21.676 -> Audio value : 149	sharp value : 1754
+18:35:21.823 -> Sending packet: 
+18:35:21.823 -> Audio value : 145	sharp value : 1967
+18:35:21.929 -> Sending packet: 
+18:35:21.929 -> Audio value : 146	sharp value : 2035
+18:35:22.048 -> Sending packet: 
+18:35:22.048 -> Audio value : 216	sharp value : 2109
+18:35:22.161 -> Sending packet: 
+18:35:22.161 -> Audio value : 198	sharp value : 2112
+18:35:22.306 -> Sending packet: 
+18:35:22.306 -> Audio value : 171	sharp value : 2083
+18:35:22.446 -> Sending packet: 
+18:35:22.446 -> Audio value : 170	sharp value : 2094
+18:35:22.564 -> Sending packet: 
+18:35:22.564 -> Audio value : 159	sharp value : 2112
+18:35:22.689 -> Sending packet: 
+18:35:22.689 -> Audio value : 165	sharp value : 2112
+18:35:22.827 -> Sending packet: 
+18:35:22.827 -> Audio value : 191	sharp value : 2111
+18:35:22.937 -> Sending packet: 
+18:35:22.937 -> Audio value : 171	sharp value : 2094
+18:35:23.089 -> Sending packet: 
+18:35:23.089 -> Audio value : 158	sharp value : 2085
+18:35:23.193 -> Sending packet: 
+18:35:23.193 -> Audio value : 176	sharp value : 2065
+18:35:23.317 -> Sending packet: 
+18:35:23.317 -> Audio value : 149	sharp value : 1938
+18:35:23.469 -> Sending packet: 
+18:35:23.469 -> Audio value : 196	sharp value : 2064
+18:35:23.585 -> Sending packet: 
+18:35:23.585 -> Audio value : 163	sharp value : 2106
+18:35:23.717 -> Sending packet: 
+18:35:23.717 -> Audio value : 154	sharp value : 1917
+18:35:23.832 -> Sending packet: 
+18:35:23.832 -> Audio value : 169	sharp value : 1729
+18:35:23.981 -> Sending packet: 
+18:35:23.981 -> Audio value : 144	sharp value : 2149
+18:35:24.089 -> Sending packet: 
+18:35:24.089 -> Audio value : 176	sharp value : 2065
+18:35:24.239 -> Sending packet: 
+18:35:24.239 -> Audio value : 208	sharp value : 2064
+18:35:24.356 -> Sending packet: 
+18:35:24.356 -> Audio value : 206	sharp value : 2064
+18:35:24.465 -> Sending packet: 
+18:35:24.465 -> Audio value : 302	sharp value : 2092
+18:35:24.614 -> Sending packet: 
+18:35:24.614 -> Audio value : 289	sharp value : 2085
+18:35:24.719 -> Sending packet: 
+18:35:24.719 -> Audio value : 211	sharp value : 1635
+18:35:24.838 -> Sending packet: 
+18:35:24.838 -> Audio value : 165	sharp value : 1987
+18:35:24.979 -> Sending packet: 
+18:35:24.979 -> Audio value : 48	sharp value : 2090
+18:35:25.098 -> Sending packet: 
+18:35:25.098 -> Audio value : 186	sharp value : 2092
+18:35:25.256 -> Sending packet: 
+18:35:25.256 -> Audio value : 175	sharp value : 2131
+18:35:25.356 -> Sending packet: 
+18:35:25.356 -> Audio value : 139	sharp value : 2090
+18:35:25.497 -> Sending packet: 
+18:35:25.497 -> Audio value : 206	sharp value : 2091
+18:35:25.595 -> Sending packet: 
+18:35:25.595 -> Audio value : 80	sharp value : 2132
+18:35:25.733 -> Sending packet: 
+18:35:25.733 -> Audio value : 135	sharp value : 2112
+18:35:25.845 -> Sending packet: 
+18:35:25.845 -> Audio value : 222	sharp value : 2090
+18:35:25.999 -> Sending packet: 
+18:35:25.999 -> Audio value : 178	sharp value : 2065
+18:35:26.111 -> Sending packet: 
+18:35:26.111 -> Audio value : 118	sharp value : 2091
+18:35:26.263 -> Sending packet: 
+18:35:26.263 -> Audio value : 159	sharp value : 2087
+18:35:26.389 -> Sending packet: 
+18:35:26.389 -> Audio value : 239	sharp value : 2089
+18:35:26.489 -> Sending packet: 
+18:35:26.489 -> Audio value : 143	sharp value : 2090
+18:35:26.638 -> Sending packet: 
+18:35:26.638 -> Audio value : 154	sharp value : 2090
+18:35:26.747 -> Sending packet: 
+18:35:26.747 -> Audio value : 197	sharp value : 2089
+18:35:26.905 -> Sending packet: 
+18:35:26.905 -> Audio value : 205	sharp value : 2134
+18:35:27.005 -> Sending packet: 
+18:35:27.005 -> Audio value : 143	sharp value : 2087
+18:35:27.148 -> Sending packet: 
+18:35:27.148 -> Audio value : 150	sharp value : 2087
+18:35:27.255 -> Sending packet: 
+18:35:27.255 -> Audio value : 209	sharp value : 2091
+18:35:27.373 -> Sending packet: 
+18:35:27.373 -> Audio value : 127	sharp value : 2014
+18:35:27.519 -> Sending packet: 
+18:35:27.519 -> Audio value : 154	sharp value : 2090
+18:35:27.631 -> Sending packet: 
+18:35:27.631 -> Audio value : 198	sharp value : 2091
+18:35:27.764 -> Sending packet: 
+18:35:27.764 -> Audio value : 214	sharp value : 2159
+18:35:27.906 -> Sending packet: 
+18:35:27.906 -> Audio value : 156	sharp value : 1919
+18:35:28.014 -> Sending packet: 
+18:35:28.014 -> Audio value : 79	sharp value : 2091
+18:35:28.163 -> Sending packet: 
+18:35:28.163 -> Audio value : 194	sharp value : 2090
+18:35:28.279 -> Sending packet: 
+18:35:28.279 -> Audio value : 699	sharp value : 2110
+18:35:28.387 -> Sending packet: 
+18:35:28.387 -> Audio value : 320	sharp value : 1803
+18:35:28.547 -> Sending packet: 
+18:35:28.547 -> Audio value : 145	sharp value : 2087
+18:35:28.664 -> Sending packet: 
+18:35:28.664 -> Audio value : 167	sharp value : 2087
+18:35:28.773 -> Sending packet: 
+18:35:28.773 -> Audio value : 172	sharp value : 2088
+18:35:28.928 -> Sending packet: 
+18:35:28.928 -> Audio value : 227	sharp value : 2037
+18:35:29.036 -> Sending packet: 
+18:35:29.036 -> Audio value : 209	sharp value : 2154
+18:35:29.179 -> Sending packet: 
+18:35:29.179 -> Audio value : 210	sharp value : 2091
+18:35:29.297 -> Sending packet: 
+18:35:29.297 -> Audio value : 150	sharp value : 1753
+18:35:29.437 -> Sending packet: 
+18:35:29.437 -> Audio value : 217	sharp value : 1941
+18:35:29.547 -> Sending packet: 
+18:35:29.547 -> Audio value : 146	sharp value : 2092
+18:35:29.689 -> Sending packet: 
+18:35:29.689 -> Audio value : 158	sharp value : 2089
+18:35:29.797 -> Sending packet: 
+18:35:29.797 -> Audio value : 144	sharp value : 2090
+18:35:29.939 -> Sending packet: 
+18:35:29.939 -> Audio value : 144	sharp value : 2101
+18:35:30.039 -> Sending packet: 
+18:35:30.039 -> Audio value : 89	sharp value : 2091
+18:35:30.187 -> Sending packet: 
+18:35:30.187 -> Audio value : 451	sharp value : 2090
+18:35:30.330 -> Sending packet: 
+18:35:30.330 -> Audio value : 141	sharp value : 2090
+18:35:30.447 -> Sending packet: 
+18:35:30.447 -> Audio value : 179	sharp value : 2088
+18:35:30.554 -> Sending packet: 
+18:35:30.554 -> Audio value : 146	sharp value : 2088
+18:35:30.714 -> Sending packet: 
+18:35:30.714 -> Audio value : 185	sharp value : 2064
+18:35:30.820 -> Sending packet: 
+18:35:30.820 -> Audio value : 155	sharp value : 2065
+18:35:30.939 -> Sending packet: 
+18:35:30.939 -> Audio value : 343	sharp value : 2087
+18:35:31.087 -> Sending packet: 
+18:35:31.087 -> Audio value : 241	sharp value : 2086
+18:35:31.195 -> Sending packet: 
+18:35:31.195 -> Audio value : 121	sharp value : 2158
+18:35:31.339 -> Sending packet: 
+18:35:31.339 -> Audio value : 192	sharp value : 2087
+18:35:31.447 -> Sending packet: 
+18:35:31.447 -> Audio value : 236	sharp value : 2091
+18:35:31.597 -> Sending packet: 
+18:35:31.597 -> Audio value : 128	sharp value : 2087
+18:35:31.722 -> Sending packet: 
+18:35:31.722 -> Audio value : 109	sharp value : 2087
+18:35:31.821 -> Sending packet: 
+18:35:31.821 -> Audio value : 144	sharp value : 2089
+18:35:31.962 -> Sending packet: 
+18:35:31.962 -> Audio value : 177	sharp value : 1986
+18:35:32.073 -> Sending packet: 
+18:35:32.073 -> Audio value : 144	sharp value : 1803
+18:35:32.222 -> Sending packet: 
+18:35:32.222 -> Audio value : 181	sharp value : 2089
+18:35:32.338 -> Sending packet: 
+18:35:32.338 -> Audio value : 209	sharp value : 2087
+18:35:32.480 -> Sending packet: 
+18:35:32.480 -> Audio value : 205	sharp value : 2091
+18:35:32.589 -> Sending packet: 
+18:35:32.589 -> Audio value : 191	sharp value : 2087
+18:35:32.728 -> Sending packet: 
+18:35:32.728 -> Audio value : 140	sharp value : 2010
+18:35:32.838 -> Sending packet: 
+18:35:32.838 -> Audio value : 177	sharp value : 2090
+18:35:32.973 -> Sending packet: 
+18:35:32.973 -> Audio value : 174	sharp value : 1567
+
+// Train OUT
+
+18:35:33.112 -> Sending packet: 
+18:35:33.112 -> Audio value : 181	sharp value : 0
+18:35:33.246 -> Sending packet: 
+18:35:33.246 -> Audio value : 134	sharp value : 0
+18:35:33.353 -> Sending packet: 
+18:35:33.353 -> Audio value : 201	sharp value : 0
+18:35:33.497 -> Sending packet: 
+18:35:33.497 -> Audio value : 149	sharp value : 0
+18:35:33.614 -> Sending packet: 
+18:35:33.614 -> Audio value : 176	sharp value : 0
+18:35:33.722 -> Sending packet: 
+18:35:33.722 -> Audio value : 160	sharp value : 0
+18:35:33.877 -> Sending packet: 
+18:35:33.877 -> Audio value : 143	sharp value : 0
+18:35:33.981 -> Sending packet: 
+18:35:33.981 -> Audio value : 163	sharp value : 0
+18:35:34.131 -> Sending packet: 
+18:35:34.131 -> Audio value : 201	sharp value : 198
+18:35:34.231 -> Sending packet: 
+18:35:34.231 -> Audio value : 161	sharp value : 48
+18:35:34.371 -> Sending packet: 
+18:35:34.371 -> Audio value : 161	sharp value : 0
+18:35:34.523 -> Sending packet: 
+18:35:34.523 -> Audio value : 144	sharp value : 0
+18:35:34.639 -> Sending packet: 
+18:35:34.639 -> Audio value : 144	sharp value : 0
+18:35:34.739 -> Sending packet: 
+18:35:34.739 -> Audio value : 190	sharp value : 0
+18:35:34.889 -> Sending packet: 
+18:35:34.889 -> Audio value : 202	sharp value : 0
+18:35:35.021 -> Sending packet: 
+18:35:35.021 -> Audio value : 137	sharp value : 4
+18:35:35.130 -> Sending packet: 
+18:35:35.130 -> Audio value : 209	sharp value : 0
+18:35:35.272 -> Sending packet: 
+18:35:35.272 -> Audio value : 126	sharp value : 0
+18:35:35.379 -> Sending packet: 
+18:35:35.379 -> Audio value : 175	sharp value : 0
+18:35:35.537 -> Sending packet: 
+18:35:35.537 -> Audio value : 165	sharp value : 126

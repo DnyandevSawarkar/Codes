@@ -1,0 +1,21 @@
+void Square(void)
+{
+	while (1)
+	{
+		for (int s = 2; s < 6; s++)
+		{
+			s--;
+			forward();      // side 1
+			printf("\n side %d", s);
+			_delay_ms(2000);
+			s++;
+			left();			// turn to side 2
+			_delay_ms(810);
+			if(s<=4)
+				printf("\n turning to side %d", s);
+		}
+		stop();
+		printf("\n Stoped \n");
+		break;
+	}
+}

@@ -1,0 +1,4 @@
+﻿Acknowledgements: 
+1: Lichman, M. (2013). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
+2: Learning Multiple Layers of Features from Tiny Images, Alex Krizhevsky, 2009. Additional information is available on: https://www.cs.toronto.edu/~kriz/cifar.html
+3: GloVe models: https://opendatacommons.org/licenses/pddl/

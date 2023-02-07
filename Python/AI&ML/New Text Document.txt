@@ -1,0 +1,41 @@
+    1  python3
+    2  lscpu
+    3  clear
+    4  ls /opt/intel/oneapi/
+    5  source /opt/intel/oneapi/setvars.sh
+    6  python --version
+    7  history
+    8  conda list
+    9  pip install jupyter notebook
+   10  history
+   11  exit
+   12  cp /opt/fdp/ML.zip
+   13  cp /opt/fdp/ML.zip $PWD
+   14  ll
+   15  mkdir machine_learning
+   16  mv ML.zip machine_learning/
+   17  cd machine_learning/
+   18  ll
+   19  unzip ML.zip
+   20  exit
+   21  source /opt/intel/oneapi/setvars.sh
+   22  pip install jupyter notebook
+   23  jupyter notebook --ip=0.0.0.0 --port=8888
+   24  exit
+   25  ls
+   26  exit
+   27  ls
+   28  pip install jupyter notebook
+   29  python
+   30  ls
+   31  source /opt/intel/oneapi/setvars.sh
+   32  conda list
+   33  jupyter notebook --ip=0.0.0.0 --port=8888
+   34  cp /opt/fdp/DL.zip $PWD
+   35  ll
+   36  mkdir deep_learning
+   37  cd  deep_learning
+   38  mv /home/faculty26/DL.zip $PWD
+   39  ll
+   40  unzip DL.zip
+   41  history

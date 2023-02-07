@@ -1,0 +1,14 @@
+Dependencies for Project 'AdcExample2', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x6375290D)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil_v5\ARM\INC" -I "C:\Keil_v5\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o" --depend "Startup.d")
+F (.\main.c)(0x6375290D)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I..\..\Keil_Sample_Code\00-libfiles -I "C:\Keil_v5\ARM\INC" -I "C:\Keil_v5\ARM\INC\Philips" -o "main.o" --omf_browse "main.crf" --depend "main.d")
+F (..\..\Keil_Sample_Code\00-libfiles\delay.c)(0x6375290C)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\..\Keil_Sample_Code\00-libfiles -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Philips -o "delay.o" --omf_browse "delay.crf" --depend "delay.d")
+F (..\..\Keil_Sample_Code\00-libfiles\delay.h)(0x6375290C)()
+F (..\..\Keil_Sample_Code\00-libfiles\gpio.c)(0x6375290C)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\..\Keil_Sample_Code\00-libfiles -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Philips -o "gpio.o" --omf_browse "gpio.crf" --depend "gpio.d")
+F (..\..\Keil_Sample_Code\00-libfiles\gpio.h)(0x6375290C)()
+F (..\..\Keil_Sample_Code\00-libfiles\lcd.c)(0x6375290C)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\..\Keil_Sample_Code\00-libfiles -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Philips -o "lcd.o" --omf_browse "lcd.crf" --depend "lcd.d")
+F (..\..\Keil_Sample_Code\00-libfiles\lcd.h)(0x6375290C)()
+F (..\..\Keil_Sample_Code\00-libfiles\stdutils.h)(0x6375290C)()
+F (..\..\Keil_Sample_Code\00-libfiles\systemInit.c)(0x6375290C)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\..\Keil_Sample_Code\00-libfiles -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Philips -o "systeminit.o" --omf_browse "systeminit.crf" --depend "systeminit.d")
+F (..\..\Keil_Sample_Code\00-libfiles\systemInit.h)(0x6375290C)()
+F (..\..\Keil_Sample_Code\00-libfiles\adc.c)(0x6375290C)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\..\Keil_Sample_Code\00-libfiles -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Philips -o "adc.o" --omf_browse "adc.crf" --depend "adc.d")
+F (..\..\Keil_Sample_Code\00-libfiles\adc.h)(0x6375290C)()

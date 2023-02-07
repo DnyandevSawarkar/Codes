@@ -1,0 +1,16 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\Embedded Systems & Robotics\projects\keli\kj\Two_Port.uvproj
+Project File Date:  10/19/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling Two_Port.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+*** ERROR: COMMAND-FILE 'Two' NOT FOUND
+Target not created

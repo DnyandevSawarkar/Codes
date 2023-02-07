@@ -1,0 +1,135 @@
+C51 COMPILER V7.06   LCDNO1                                                                09/17/2017 21:38:25 PAGE 1   
+
+
+C51 COMPILER V7.06, COMPILATION OF MODULE LCDNO1
+OBJECT MODULE PLACED IN lcdno1.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE lcdno1.c BROWSE DEBUG OBJECTEXTEND
+
+stmt level    source
+
+   1          /****************************************************
+   2                 Lesson  : 8
+   3                     Neme    : LCD Interface
+   4                     Details : The LCD has two line and each line has 16 character
+   5                                           the lcd works here 4 bit mode 
+   6                                           the display show "welcome" on first line
+   7                                           and "have a nice day" on second line 
+   8          ******************************************************/
+   9          #include<REG51.H>
+  10          //Fuction Prototypes
+  11          void delay(unsigned int);
+  12          void lcd_string(unsigned char *p);
+  13          void lcd_data(unsigned char );
+  14          void lcd_cmd(unsigned char );
+  15          void lcd_no(unsigned char );
+  16          
+  17          sbit EN = P1^1;
+  18          sbit RS = P1^0;
+  19          sbit RW = P0^1;
+  20          sbit light = P0^3;
+  21          
+  22          #define lcddata P2; 
+  23          // Program Starts Here
+  24          void main()
+  25          {
+  26   1      
+  27   1              
+  28   1              lcd_cmd(0x38);    // Configuring settings to 8-bit 2 row 
+  29   1      delay(2);
+  30   1      lcd_cmd(0x0E); 
+  31   1      delay(2);
+  32   1      lcd_cmd(0x06);    //Display on
+  33   1      delay(2);
+  34   1      lcd_cmd(0x80);    //Set cursor to blink at line 1 positon 1
+  35   1      delay(2);
+  36   1               delay(1);
+  37   1               lcd_no(25);
+  38   1      //       lcd_cmd(0x81);
+  39   1      /*       lcd_string("  MANOJAA     ");
+  40   1               delay(25);                                                     */
+  41   1               lcd_cmd(0xc0);  // LCD start 2nd line
+  42   1               delay(1);
+  43   1           lcd_string("HAVE A NICE DAY ");             
+  44   1               while(1);
+  45   1              
+  46   1      }
+  47          
+  48          void lcd_string(unsigned char *p)
+  49          {
+  50   1              while(*p != '\0')
+  51   1              {
+  52   2              lcd_data(*p);
+  53   2              p++;
+  54   2              delay(10);
+  55   2              }
+C51 COMPILER V7.06   LCDNO1                                                                09/17/2017 21:38:25 PAGE 2   
+
+  56   1      }
+  57          
+  58          void lcd_data(unsigned char x)
+  59          { 
+  60   1        RW=0;
+  61   1        RS=1;
+  62   1        P2 = (P2 & 0x0F)|(x & 0xF0);
+  63   1        EN=1;
+  64   1        delay(1);
+  65   1        EN=0;
+  66   1        P2 = (P2 & 0x0F)|((x<<4) & 0xF0);
+  67   1        EN =1;
+  68   1        delay(1);
+  69   1        EN=0;
+  70   1      }
+  71          void lcd_no(unsigned char t)
+  72          { 
+  73   1        RW=0;
+  74   1        RS=1;
+  75   1        while(t>0)
+  76   1        {t=t/10;
+  77   2        P2 =t + 0x30;
+  78   2        t=t%10;
+  79   2        }
+  80   1        EN=1;
+  81   1        delay(1);
+  82   1        EN=0;
+  83   1      }
+  84          void lcd_cmd(unsigned char z)
+  85          {
+  86   1        RW=0;
+  87   1        RS=0;
+  88   1        P2 = (P2 & 0x0F)|(z & 0xF0);
+  89   1        EN =1;
+  90   1        delay(1);
+  91   1        EN=0;
+  92   1        P2 = (P2 & 0x0F)|((z<<4) & 0xF0);
+  93   1        EN =1;
+  94   1        delay(1);
+  95   1        EN=0;
+  96   1      
+  97   1      }
+  98          
+  99          
+ 100          void delay(unsigned int tt)
+ 101          {
+ 102   1              unsigned int a,b;
+ 103   1              for(a=0;a<tt;a++)
+ 104   1                      {
+ 105   2                              for(b=0;b<1275;b++)
+ 106   2                              ;
+ 107   2                      }
+ 108   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    243    ----
+   CONSTANT SIZE    =     17    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       5
+   IDATA SIZE       =   ----    ----
+C51 COMPILER V7.06   LCDNO1                                                                09/17/2017 21:38:25 PAGE 3   
+
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
