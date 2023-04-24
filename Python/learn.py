@@ -3,6 +3,13 @@ import numpy as np
 
 path = "G:/Codes/Python/4k.jpg"
 
+img = cv2.imread(path)
+
+mask = cv2.imread()
+
+
+
+'''
 font = cv2.FONT_HERSHEY_COMPLEX
 
 img  = cv2.imread(path,cv2.IMREAD_COLOR)
@@ -32,7 +39,7 @@ cv2.imshow("img",img)
 if cv2.waitKey(0) & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-'''
+
 window_name = 'Img'
 start_pt = (1,1)
 end_pt = (350,350)

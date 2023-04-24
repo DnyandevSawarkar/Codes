@@ -1,22 +1,35 @@
 #include <ESP8266WiFi.h>
 #include "Adafruit_MQTT.h"
 #include "Adafruit_MQTT_Client.h"
+/*
+#include <DHT.h>
 
-#define WIFI_SSID "IDE"
-#define WIFI_PASS "Vscode#120"
+#define DHTPIN D3
+#define DHTTYPE DHT11
+
+DHT dht(DHTPIN, DHTTYPE);
+float hum; 
+float temp; 
+*/
+#define WIFI_SSID "12345"
+#define WIFI_PASS "Yash#1209"
 
 #define MQTT_SERV "io.adafruit.com"
 #define MQTT_PORT 1883
-#define MQTT_NAME "Yash_8862"
-#define MQTT_PASS "aio_CMuh00N8qXlBazZHfJBDT8hlNxqy"
+#define MQTT_NAME "Yash_0980"
+#define MQTT_PASS "aio_omWU48TG75sW7nd4SbDL27oDCJd3"
 
-int led = D3;
+
+//int led = D3;
 
 WiFiClient client;
 Adafruit_MQTT_Client mqtt(&client, MQTT_SERV, MQTT_PORT, MQTT_NAME, MQTT_PASS);
 
-Adafruit_MQTT_Subscribe onoff = Adafruit_MQTT_Subscribe(&mqtt, MQTT_NAME "/f/onoff");
-Adafruit_MQTT_Publish LightsStatus = Adafruit_MQTT_Publish(&mqtt, MQTT_NAME "/f/LightsStatus");
+Adafruit_MQTT_Subscribe Control = Adafruit_MQTT_Subscribe(&mqtt, MQTT_NAME "/f/Control");
+Adafruit_MQTT_Publish State = Adafruit_MQTT_Publish(&mqtt, MQTT_NAME "/f/State");
+
+//Adafruit_MQTT_Publish Temp_State = Adafruit_MQTT_Publish(&mqtt, MQTT_NAME "/f/Temp");
+//Adafruit_MQTT_Publish Hum_State = Adafruit_MQTT_Publish(&mqtt, MQTT_NAME "/f/Hum");
 
 
 void setup()
@@ -28,7 +41,7 @@ void setup()
   //Connect to WiFi
   Serial.print("\n\nConnecting Wifi>");
   WiFi.begin(WIFI_SSID, WIFI_PASS);
-  digitalWrite(LED_BUILTIN, LOW);
+  //digitalWrite(LED_BUILTIN, LOW);
 
   while (WiFi.status() != WL_CONNECTED)
   {
@@ -38,12 +51,13 @@ void setup()
 
   Serial.println("OK!");
 
-  //Subscribe to the onoff topic
-  mqtt.subscribe(&onoff);
+  //Subscribe to the Control topic
+  mqtt.subscribe(&Control);
+  //dht.begin();
 
-  pinMode(led, OUTPUT);
-  digitalWrite(LED_BUILTIN, HIGH);
-  digitalWrite(led, LOW);
+  //pinMode(led, OUTPUT);
+  //digitalWrite(LED_BUILTIN, HIGH);
+  //igitalWrite(led, LOW);
 
 }
 
@@ -51,6 +65,9 @@ void loop()
 {
   //Connect/Reconnect to MQTT
   MQTT_connect();
+  
+  //hum = dht.readHumidity();
+  //temp= dht.readTemperature();
 
   //Read from our subscription queue until we run out, or
   //wait up to 5 seconds for subscription to update
@@ -58,34 +75,44 @@ void loop()
   while ((subscription = mqtt.readSubscription(5000)))
   {
     //If we're in here, a subscription updated...
-    if (subscription == &onoff)
+    if (subscription == &Control)
     {
+      /*
+      Serial.println(hum);
+      Serial.println(temp);
+      Serial.println();
+      Serial.println();
+
+      Temp_State.publish(temp);
+      Hum_State.publish(hum);
+      */
+
       //Print the new value to the serial monitor
-      Serial.print("onoff: ");
-      Serial.println((char*) onoff.lastread);
+      Serial.print("Control: ");
+      Serial.println((char*) Control.lastread);
 
       //If the new value is  "ON", turn the light on.
       //Otherwise, turn it off.
-      if (!strcmp((char*) onoff.lastread, "ON"))
+      if (!strcmp((char*) Control.lastread, "ON"))
       {
         //active low logic
-        digitalWrite(led, HIGH);
-        LightsStatus.publish("ON");
+        digitalWrite(LED_BUILTIN, HIGH);
+        State.publish("ON");
       }
-      else if (!strcmp((char*) onoff.lastread, "OFF"))
+      else if (!strcmp((char*) Control.lastread, "OFF"))
       {
-        digitalWrite(led, LOW);
-        LightsStatus.publish("OFF");
+        digitalWrite(LED_BUILTIN, LOW);
+        State.publish("OFF");
 
       }
       else
       {
-        LightsStatus.publish("ERROR");
+        State.publish("ERROR");
       }
     }
     else
     {
-      //LightsStatus.publish("ERROR");
+      //State.publish("ERROR");
     }
   }
   //  if (!mqtt.ping())

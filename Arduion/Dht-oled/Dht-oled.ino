@@ -7,9 +7,6 @@
 Adafruit_SSD1306 display = Adafruit_SSD1306(128, 64, &Wire, -1);
 unsigned long delayTime;
 
-// Uncomment one of the lines below for whatever DHT sensor type you're using!
-//#define DHTTYPE DHT11 // DHT 11
-//#define DHTTYPE DHT21 // DHT 21 (AM2301)
 #define DHTTYPE DHT11 // DHT 22 (AM2302), AM2321
 //DHT Sensor;
 uint8_t DHTPin = 8;

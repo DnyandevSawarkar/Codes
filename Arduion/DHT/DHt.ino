@@ -1,7 +1,7 @@
 //Libraries
 #include <DHT.h>
 //Constants
-#define DHTPIN 3
+#define DHTPIN D3
 #define DHTTYPE DHT11  
 DHT dht(DHTPIN, DHTTYPE);
 float hum; 

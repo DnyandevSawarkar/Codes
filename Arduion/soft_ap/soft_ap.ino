@@ -3,7 +3,7 @@
 
  //Specifying the SSID and Password of the AP//
  
-const char* esp_ssid = "yashhh"; //Access Point SSID
+const char* esp_ssid = "123450"; //Access Point SSID
 const char* esp_password= "SoftAP@12"; //Access Point Password
 uint8_t max_connections=8;//Maximum Connection Limit for AP
 int current_stations=0, new_stations=0;
@@ -97,6 +97,7 @@ void handle_ledon()
   Serial.println("LED ON");
   led_status=true;
   server.send(200, "text/html", HTML());
+  delay(3000);
 }
  
 void handle_ledoff()
