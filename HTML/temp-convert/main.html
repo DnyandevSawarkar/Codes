@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<title>Temperature Conversion</title>
+        <!--Google font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+        <!--Stylesheet-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body >
+        <div id="contentout">
+            <div id="content">
+                <h1 font-size: 50px align="center" >Temperature <span> Conversion </span></h1>
+                <p align="center">Please provide values below to convert Celsius [°C] to Fahrenheit [°F], or <i>vice versa.</i>.</p>
+            </div>
+        </div>
+
+        <div class="convter">
+            <h2 align="center">Convter</h2>
+        </div>
+
+        <div class="wrapper">
+            <table align="center" cellpadding="5">
+                <tbody>
+                    <div class="container">
+                        <label for="celsius" >Celsius</label>
+                        <input type="number" id="celsius" oninput= "celToFar()">
+                    </div>
+                </tbody>
+            </table>
+            <table align="center" cellpadding="85">
+                <tbody>
+                    <div class="container">
+                        <label for="fahrenheit">Fahrenheit</label>
+                        <input type="number" id="fahrenheit" oninput = "farToCel()">
+                    </div>
+                  
+                </tbody>
+            </table>
+        </div>
+
+        <div class="formula">
+            <h2 align="center">Formula</h2>
+        </div>
+
+        <div class="wrapper1">
+            <table >
+                <tbody>
+                    <td >F = </td>
+                    <td>
+                        <table cellpadding="0" cellspacing="0" >
+                            <tbody>
+                                <tr>
+                                    <td >9</td>
+                                </tr>
+                                <tr>
+                                    <td height="1" bgcolor="#000000"></td>
+                                </tr>
+                                <tr>
+                                    <td >5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>C + 32</td>
+                </tbody>
+            </table>
+
+            <table >
+                <tbody>
+                    <td >C = </td>
+                    <td>
+                        <table cellpadding="0" cellspacing="0" >
+                            <tbody>
+                                <tr>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td height="1" bgcolor="#000000"></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>(F - 32)</td>
+                </tbody>        
+            </table>   
+        </div>
+
+        
+        <script src="script.js"></script>
+    </body>
+	
+</html>

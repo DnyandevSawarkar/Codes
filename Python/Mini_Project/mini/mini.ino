@@ -1,39 +1,33 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 #include <Servo.h>
-
- //Specifying the SSID and Password of the AP//
  
-const char* esp_ssid = "123450"; //Access Point SSID
-const char* esp_password= "SoftAP@12"; //Access Point Password
-uint8_t max_connections=8;//Maximum Connection Limit for AP
+const char* esp_ssid = "123450"; 
+const char* esp_password= "SoftAP@12"; 
+uint8_t max_connections=8;
 int current_stations=0, new_stations=0;
- 
-//Specifying the Webserver instance to connect with HTTP Port: 80
+
 ESP8266WebServer server(80);
- 
-//Specifying the Pins connected from LED
+
 const int led_blue=D1;
 const int led_red=D2;
 
-Servo myservo;                  // Create a servo object to control a servo
+Servo myservo;         
 const int servo_pin = D4;
 
 const int trigpin = D5;
 const int echopin = D6;
 
-//Specifying the boolean variables indicating the status of LED1 to LED4
 bool gate_status=false;
  
 long duration;
 int distance;
 
 void setup() {
-  //Start the serial communication channel
+  
   Serial.begin(115200);
   Serial.println();
  
-  //Output mode for the LED Pins
   pinMode(servo_pin,OUTPUT);
 
   pinMode(trigpin, OUTPUT);
@@ -43,59 +37,38 @@ void setup() {
   pinMode(led_red,OUTPUT);
 
   myservo.attach(servo_pin);
-   
-  //Setting the AP Mode with SSID, Password, and Max Connection Limit
 
-  //WiFi.softAP(ssid, pass, channel, hidden, max_connection)
   if(WiFi.softAP(esp_ssid,esp_password,1,false,max_connections)==true)
-  {/*
-    Serial.print("Access Point is Created with SSID: ");
-    Serial.println(esp_ssid);
-    Serial.print("Max Connections Allowed: ");
-    Serial.println(max_connections);
-    Serial.print("Access Point IP: ");
-    Serial.println(WiFi.softAPIP());*/
+  {
+    //Serial.println("Created Access Point");
   }
   else
   {
     //Serial.println("Unable to Create Access Point");
   }
- 
-  //Specifying the functions which will be executed upon corresponding GET request from the client
   server.on("/",handle_OnConnect);
   server.on("/open",handle_open);
   server.on("/close",handle_close);
+
   server.onNotFound(handle_NotFound);
-   
-  //Starting the Server
+
   server.begin();
   Serial.println("HTTP Server Started");
 }
  
 void loop() {
-  //Assign the server to handle the clients
   server.handleClient();
-     
-  //Continuously check how many stations are connected to Soft AP and notify whenever a new station is connected or disconnected
   new_stations=WiFi.softAPgetStationNum();
-   
+  
   if(current_stations<new_stations)//Device is Connected
   {
     current_stations=new_stations;
-    //Serial.print("New Device Connected to SoftAP... Total Connections: ");
-    //Serial.println(current_stations);
   }
-   
   if(current_stations>new_stations)//Device is Disconnected
   {
     current_stations=new_stations;
-    //Serial.print("Device disconnected from SoftAP... Total Connections: ");
-    //Serial.println(current_stations);
   }
- 
-  //Turn the LEDs ON/OFF as per their status set by the connected client
-   
-  //LED
+
   if(gate_status==false)
   {
     myservo.write(0);
@@ -129,7 +102,6 @@ void handle_OnConnect()
  
 void handle_open()
 {
-  //Serial.println("");
   gate_status=true;
   server.send(200, "text/html", HTML());
   delay(3000);
@@ -137,7 +109,6 @@ void handle_open()
  
 void handle_close()
 {
-  //Serial.println("LED OFF");
   gate_status=false;
   server.send(200, "text/html", HTML());
 }
@@ -173,7 +144,6 @@ String HTML()
   {
     msg+="<p>Gate Status: ON</p><a class=\"button button-off\" href=\"/close\">OFF</a>\n";
   }
-  msg+="</body>\n";
-  msg+="</html>\n";
+  msg+="</body></html>\n";
   return msg;
 }

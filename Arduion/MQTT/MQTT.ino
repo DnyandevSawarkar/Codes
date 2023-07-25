@@ -9,8 +9,8 @@ DHT dht(DHTPIN, DHTTYPE);
 float hum; 
 float temp; 
 
-const char* ssid = "";
-const char* password = "";
+const char* ssid = "12345";
+const char* password = "Yash#1209";
 const char* mqtt_server = "91.121.93.94";  // ping test.mosquitto.org
 
 WiFiClient espClient;
@@ -108,8 +108,8 @@ void loop() {
   if (now - lastMsg > 2000) {
     lastMsg = now;
     String payload = String("temperature") + String(temp) + "," + String("humidity")+ String(hum);
-    Serial.print("Publish message: ");
-    Serial.println(payload);
+    //Serial.print("Publish message: ");
+    //Serial.println(payload);
     client.publish("device/temp", payload.c_str());
   }
 }

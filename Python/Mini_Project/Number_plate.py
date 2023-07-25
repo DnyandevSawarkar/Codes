@@ -14,18 +14,18 @@ def send_notification():
     requests.post(url)
 '''
 def numper_plate():
+
     # Read the saved number plate from a file
-    #saved_number_plate = "MH49R33899"
-    saved_number_plate = "MH 49 R 3389"
-    '''
+    saved_number_plate = "MH49R3389"
     # Capture an image using the camera
     camera = cv2.VideoCapture(0)
-
+    
     for i in range(30):
+        #time.sleep(1)
         _, image = camera.read()
     camera.release()    
-    '''
-    image = cv2.imread(r"G:\Codes\Python\Mini_Project\2.jpeg")
+    
+    #image = cv2.imread(r"G:\Codes\Python\Mini_Project\2.jpeg")
     #image = cv2.resize(i_image,(800,600),interpolation = cv2.INTER_AREA)
     # Convert the image to grayscale
     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -37,7 +37,7 @@ def numper_plate():
     # Read the number plate from the processed image using Tesseract OCR
     number_plate = pytesseract.image_to_string(processed_image)
     number_plate = number_plate.strip()
-    #cv2.imshow('1',processed_image)
+    cv2.imshow('1',processed_image)
     print(number_plate)
 
     # Compare the read number plate with the saved one
@@ -61,9 +61,12 @@ def numper_plate():
             flag_msg = 0"""
 
         print("Not Matched")
-        
-    #cv2.waitKey(0)
-    #cv2.destroyAllWindows()
+    
+    while(True):    
+        if cv2.waitKey(1) & 0xFF == ord('g'):
+            break    
+    cv2.waitKey(60)
+    cv2.destroyAllWindows()
     # Release the camera
 
 ser = serial.Serial('COM9',115200)
@@ -71,7 +74,7 @@ threshold = 15
 
 while True:
     distance = int(ser.readline().decode('ascii').rstrip())
-    #distance = int(distance)
+    distance = int(distance)
     print(distance)
     if distance < threshold:
         print("Starting camera")
