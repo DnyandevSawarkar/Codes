@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.top-left-avatar {
+    position: fixed; /* Change to fixed to ensure it stays at the top-left corner */
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-drag: none;
+    user-select: none;
+}
+
+.dashboard-avatar {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%;
+    user-drag: none;
+    user-select: none;
+    margin-bottom: 10px; /* Add margin for spacing */
+}
+
+.username-display {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-container {
+    text-align: center;
+    color: white;
+}
+
+.avatar-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.avatar-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    user-drag: none;
+    user-select: none;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    user-select: none;
+    color: white; /* Set text color for input fields */
+}
+
+#signin-btn,
+#signinpass-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+#signin-btn:hover,
+#signinpass-btn:hover {
+    background-color: #2980b9;
+}
+
+#dashboard-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+#dashboard-btn:hover {
+    background-color: #45a049;
+}

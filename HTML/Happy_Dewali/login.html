@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Admin DashBoard</title>
+</head>
+<body>
+    <div class="top-left-avatar" id="dashboard-avatar-container" style="display: none;">
+        <img src="dashboard-avatar.jpg" alt="Dashboard Avatar" class="dashboard-avatar">
+        <div class="username-display" id="dashboard-username"></div>
+    </div>
+
+    <div class="login-container" id="login-container">
+        <div class="avatar-container">
+            <img src="avatar.jpg" alt="Avatar">
+        </div>
+        <form id="login-form">
+            <input type="text" id="username-input" placeholder="Username" required>
+            <br>
+            <button id="signin-btn" type="button">Sign In</button>
+        </form>
+    </div>
+    <div class="password-container" id="password-container" style="display: none;text-align: center;">
+        <div class="avatar-container">
+            <img src="avatar.jpg" alt="Avatar">
+        </div>
+        
+        <form id="password-form">
+            <div class="username-display" id="username-display"></div>
+            <input type="password" id="password-input" placeholder="Password" required>
+            <br>
+            <button id="signinpass-btn" type="submit">Sign In</button>
+        </form>
+    </div>
+
+    <div class="dashboard-container" id="dashboard-container" style="display: none;">
+          <img src="dashboard-avatar.jpg" alt="Dashboard Avatar" class="dashboard-avatar">
+        
+        <h1>Welcome Deltax21</h1>
+        <p>You have one Pending Task!</p>
+        <button id="dashboard-btn">Make it Live</button>
+        <div id="video-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
