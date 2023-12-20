@@ -181,14 +181,15 @@ void loop(){
 
 typedef struct message {
   int esp_1;
-   int esp_2;
+  int esp_2;
 } message;
 
 message myMessage;
 
 void onDataReceiver(uint8_t *mac, uint8_t *incomingData, uint8_t len) {
   memcpy(&myMessage, incomingData, sizeof(myMessage));
-  Serial.println(myMessage.esp_1);Serial.println("8");
+  Serial.println(myMessage.esp_1);
+  Serial.println("8");
   if (myMessage.esp_1 == 1) {
     Serial.println("1");
     digitalWrite(led1Pin, LOW);
@@ -216,7 +217,8 @@ void setup() {
   pinMode(led4Pin, OUTPUT);
   digitalWrite(led4Pin, HIGH);
   digitalWrite(led3Pin, HIGH);
-  digitalWrite(led2Pin, HIGH);digitalWrite(led1Pin, HIGH);
+  digitalWrite(led2Pin, HIGH);
+  digitalWrite(led1Pin, HIGH);
   Serial.begin(115200);
   // Initialize ESP-NOW
   WiFi.mode(WIFI_STA);
@@ -232,4 +234,3 @@ void setup() {
 void loop() {
   // You can add non-blocking code here if needed.
 }
-
