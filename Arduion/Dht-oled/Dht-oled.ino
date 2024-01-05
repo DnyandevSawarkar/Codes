@@ -9,7 +9,7 @@ unsigned long delayTime;
 
 #define DHTTYPE DHT11 // DHT 22 (AM2302), AM2321
 //DHT Sensor;
-uint8_t DHTPin = 8;
+#define DHTPin D4
 DHT dht(DHTPin, DHTTYPE);
 float Temperature;
 float Humidity;
